@@ -1,0 +1,88 @@
+# =================================================================
+# 1. 操作系统与通用文件 (OS & General)
+# =================================================================
+.DS_Store
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# 忽略根目录随手截的临时图片（防止类似 ScreenShot_xxx.png 被提交）
+/*.png
+/*.jpg
+/*.jpeg
+
+# =================================================================
+# 2. 编辑器与 IDE 缓存 (Editors & IDEs)
+# =================================================================
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.cursor/
+.trae/
+*.swp
+*.swo
+.DS_Store
+
+# =================================================================
+# 3. 后端目录 (Python / FastAPI / backend)
+# =================================================================
+# 字节码与缓存
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# 虚拟环境 (如果你在项目内创建了虚拟环境)
+venv/
+env/
+.venv/
+Pipfile.lock
+
+# 环境变量与敏感配置 (非常重要，防止数据库密码泄露)
+backend/.env
+*.pem
+
+# 本地数据库文件 (如果使用 SQLite)
+*.sqlite3
+*.db
+
+# 日志文件
+*.log
+backend/logs/
+
+# =================================================================
+# 4. 前端目录与管理后台 (Node / Vue / Vite / frontend & v3-admin-vite)
+# =================================================================
+# 依赖包 (体积过大，必须忽略)
+node_modules/
+frontend/node_modules/
+v3-admin-vite/node_modules/
+
+# 编译构建产物
+dist/
+dist-ssr/
+frontend/dist/
+v3-admin-vite/dist/
+
+# Uniapp 运行与打包的特有目录 (如果 frontend 用了 Uniapp)
+unpackage/
+
+# npm/pnpm/yarn 日志
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# 包含本地敏感信息的环境变量配置
+.env.local
+.env.*.local
