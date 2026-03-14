@@ -228,3 +228,13 @@ code/
     pnpm build
     ```
     构建完成后，生成的 `dist` 目录可部署到 Nginx 或其他静态文件服务器。
+
+---
+
+## 🤝 致谢与引用
+
+本项目后台管理系统基于 [v3-admin-vite](https://github.com/un-pany/v3-admin-vite) 开源项目进行开发，特此感谢作者 [pany](https://github.com/pany-ang) 提供的优秀后台管理模板。
+
+- **项目地址**: https://github.com/un-pany/v3-admin-vite
+- **License**: MIT
+
